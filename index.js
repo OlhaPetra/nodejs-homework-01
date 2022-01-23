@@ -51,16 +51,7 @@ program
 
 program.parse(process.argv);
 const argv = program.opts();
-invokeAction(argv);
 
-//invokeAction({ action: "list" });
-//invokeAction({action: "get", id: "3"});
-//invokeAction({action: "add", name: "Olha", email: "olha.mail.com", phone: "098 76 377 86"});
-//invokeAction({action: "remove", id: "4c627cb9-dfa8-4f6f-9ca7-02887c99f009"})
-/* invokeAction({
-  action: "update",
-  id: "3ee4b79f-265d-4d31-9fbd-8af626408b60",
-  name: "Olha Petra",
-  email: "olha@mail.com",
-  phone: "098 76 377 86",
-}); */
+(async()=>{
+  await invokeAction(argv)
+  })()
